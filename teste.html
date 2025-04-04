@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input com Form-Floating</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-floating .underline-input {
+            border: none;
+            border-bottom: 2px solid #007bff;
+            border-radius: 0;
+            outline: none;
+            padding-top:10px;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .form-floating .underline-input:focus {
+            border-bottom: 2px solid #0056b3;
+        }
+
+        .form-floating label {
+            color: #6c757d;
+            transition: all 0.3s;
+        }
+
+        .form-floating .underline-input:focus ~ label,
+        .form-floating .underline-input:not(:placeholder-shown) ~ label {
+            transform: translateY(-30px);
+            font-size: 12px;
+            color: #007bff;
+        }
+        body{
+    background-color: brown;
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <div class="form-floating">
+        <input type="text" class="form-control underline-input" id="floatingInput" placeholder="Digite algo...">
+        <label for="floatingInput">Digite algo...</label>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

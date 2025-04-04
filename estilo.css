@@ -1,0 +1,61 @@
+.container-row{
+    background-color:#201b2c;
+    height:100vh;
+    margin:0px;
+}
+
+.div-form{
+    background-color:#ffffff;
+    height:90%;
+    border:5px groove  purple;
+    box-shadow:2px 2px 2px rgb(71, 30, 71)   
+}
+.img{
+    background-image:url(animaçao/security-animate.svg);
+    background-size:100% 100%;
+}
+body{
+    margin:0px;
+    background-color:#201b2c;
+}
+html{
+    font-size:16px;
+}
+.form-floating>.form-control~label{
+    color:purple;
+    transform: translateX(0rem);
+    text-shadow:1px 1px 1px purple;
+
+}
+.form-floating>.form-control:not(:placeholder-shown)~label,.form-floating>.form-control:focus~label{
+    transform: scale(0.90) translateY(-1.5rem) translateX(0rem);
+    color:purple;
+    text-shadow:1px 1px 1px purple;
+}
+.form-floating>.form-control,.form-floating>.form-control:focus{
+    border:none;
+    outline:none;
+    border-radius:0;
+    border-bottom:2px solid rgb(126, 28, 126);
+}
+.form-control:focus{
+    color:purple;
+}
+.submit{
+    background-color:purple;
+    color:white;
+    border:1px solid black;
+    box-shadow:2px 2px 2px black;
+}
+.submit:hover{
+    background-color:purple;
+    color:white;
+    border:1px solid black;
+    box-shadow:2px 2px 2px black;
+}
+.submit:active{
+    background-color:purple !important;
+    color:white;
+    border:1px solid black;
+    box-shadow:2px 2px 2px black;
+}
